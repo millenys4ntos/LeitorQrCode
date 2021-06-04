@@ -3,7 +3,7 @@
 $(document).on("click","#codigo", function(){
   cordova.plugins.barcodeScanner.scan(
       function (result) {
-          alert("Este é o código de barras:\n" +
+          alert("Este é o código de barras: \n" +
                 "Resultado: " + result.text + "\n" +
                 "Formato: " + result.format + "\n" +
                 "Cancelado: " + result.cancelled);
